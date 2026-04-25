@@ -15,6 +15,7 @@
 // @grant        GM_openInTab
 // @license      MIT
 // @homepageURL  https://github.com/Brandon123b/Playbook-Analytics
+// @homepageURL  https://greasyfork.org/en/scripts/575341-playbook-analytics
 // @supportURL   https://github.com/Brandon123b/Playbook-Analytics/issues
 // @downloadURL  https://raw.githubusercontent.com/Brandon123b/Playbook-Analytics/main/PlaybookAnalytics.user.js
 // @updateURL    https://raw.githubusercontent.com/Brandon123b/Playbook-Analytics/main/PlaybookAnalytics.meta.js
