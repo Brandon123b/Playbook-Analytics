@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Playbook Analytics
 // @namespace    https://github.com/Brandon123b/Playbook-Analytics
-// @version      0.1.0
+// @version      1.0.0
 // @description  Track your Google Play Books reading sessions and visualize progress, pace, and ETA with interactive charts.
 // @author       Brandon123b
 // @match        https://play.google.com/books/reader*
