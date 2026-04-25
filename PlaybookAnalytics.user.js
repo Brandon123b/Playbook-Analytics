@@ -809,25 +809,6 @@
             GM_openInTab("https://example.com/playlytics", { active: true });
         });
 
-        GM_registerMenuCommand("📖 Set Total Pages for This Book", () => {
-            const title = getBookTitle();
-            const currentTotal = Storage.getBookMetadata(title).totalPages || "";
-            const input = prompt(`Enter total pages for "${title}":`, currentTotal);
-            if (input === null) return;
-            if (input === "") {
-                Storage.saveBookMetadata(title, { totalPages: null });
-                alert("Total pages cleared");
-                return;
-            }
-            const pages = parseInt(input, 10);
-            if (!isNaN(pages) && pages > 0) {
-                Storage.saveBookMetadata(title, { totalPages: pages });
-                alert(`Total pages set to ${pages}`);
-            } else {
-                alert("Please enter a valid number");
-            }
-        });
-
         GM_registerMenuCommand("🗑️ Delete Current Book Data", () => {
             const title = getBookTitle();
             if (confirm(`Delete all reading data for "${title}"?`)) {

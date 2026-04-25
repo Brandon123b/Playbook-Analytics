@@ -22,14 +22,12 @@ Playbook Analytics tracks every page change in the Play Books web reader and tur
 - **Session detection.** Continuous reading is grouped into sessions automatically (5-minute idle gap = new session).
 - **Reading-progress chart.** Zoomable, pannable line chart of pages over reading time, color-coded per session. Hover any point for a tooltip with the exact time, % complete, time spent on that page, and the session's pace.
 - **Daily-pages bar chart.** See your daily reading volume at a glance, with empty days shown so streaks (and lapses) are visible.
-- **Auto page-count detection.** The script reads the total page count from Play Books' UI (and from the rendering iframe as a fallback). You can also set it manually for any book.
+- **Auto page-count detection.** The script reads the total page count from Play Books' UI (and from the rendering iframe as a fallback).
 - **Local-only.** All data lives in your userscript manager's storage. Nothing is ever uploaded.
 
 ## Privacy
 
 **All your reading data stays on your machine.** It's stored via your userscript manager's built-in storage (`GM_setValue`) and is never transmitted, uploaded, or shared with any server. There are no analytics, no telemetry, no accounts, and no tracking pixels.
-
-The only network requests the script makes are to [jsDelivr](https://www.jsdelivr.com/) on first install, to load the chart libraries ([Chart.js](https://www.chartjs.org/), [Hammer.js](https://hammerjs.github.io/), and the [Chart.js zoom plugin](https://github.com/chartjs/chartjs-plugin-zoom)). These are pinned to specific versions and cached by your userscript manager — they do not phone home.
 
 ## Installation
 
@@ -88,10 +86,9 @@ Underneath, the **Pages Read Per Day** chart shows your daily reading volume. Em
 
 ### Userscript menu commands
 
-While a Play Books reader tab is active, your userscript manager's menu (under **Playbook Analytics**) gives you four commands:
+While a Play Books reader tab is active, your userscript manager's menu (under **Playbook Analytics**) gives you three commands:
 
 - **📊 Open Playbook Analytics** — open the dashboard in a new tab.
-- **📖 Set Total Pages for This Book** — manually override the auto-detected page count. Useful if Play Books doesn't expose it cleanly. Submit an empty value to clear.
 - **🗑️ Delete Current Book Data** — wipe data for the book currently open.
 - **⚠️ Delete All Reading Data** — wipe everything for every book.
 
@@ -100,7 +97,7 @@ While a Play Books reader tab is active, your userscript manager's menu (under *
 - A page is recorded the **instant** you turn it (the script hooks Play Books' SPA navigation events). Sitting on a page costs nothing.
 - A reading **session** is a contiguous run of page changes with no gap longer than 5 minutes. Long pauses split your reading into separate sessions automatically.
 - "Reading time" only counts time inside sessions. Going to make coffee for half an hour doesn't inflate your numbers.
-- Books are keyed by their title in Play Books. If a book's title changes, its data won't follow — use **Set Total Pages** + start fresh, or contact me with details.
+- Books are keyed by their title in Play Books. If a book's title changes, its data won't follow — open an issue if this happens to you.
 
 ## Notes
 
