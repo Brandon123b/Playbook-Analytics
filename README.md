@@ -4,6 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Install](https://img.shields.io/badge/install-PlaybookAnalytics.user.js-3ea6ff?logo=googleplay&logoColor=white)](https://raw.githubusercontent.com/Brandon123b/Playbook-Analytics/main/PlaybookAnalytics.user.js)
+[![Sponsor](https://img.shields.io/badge/sponsor-%E2%9D%A4-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/Brandon123b)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Brandon123b/Playbook-Analytics/main/docs/Dashboard1.png" alt="Playbook Analytics dashboard" width="850">
@@ -104,6 +105,10 @@ While a Play Books reader tab is active, your userscript manager's menu (under *
 - Works on the Play Books **web reader** (`play.google.com/books/reader`). It does not work in the Android or iOS apps.
 - Tested with [Tampermonkey](https://www.tampermonkey.net/). Should work in [Violentmonkey](https://violentmonkey.github.io/) and [Greasemonkey](https://www.greasespot.net/) too — open an issue if it doesn't.
 - Data is stored per browser profile. If you read in multiple browsers or profiles, each one tracks separately.
+
+## Sponsor
+
+If this saves you time, [sponsor me on GitHub](https://github.com/sponsors/Brandon123b). Every bit helps me keep building and maintaining tools like this.
 
 ## License
 
